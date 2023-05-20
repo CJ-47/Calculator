@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Sum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Sum3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/Op" />
+
+    <EditText
+        android:id="@+id/Sum1"
+        android:layout_width="187dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Unary Input,Base Log a^x"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColorHint="#090909"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Op"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Sum3"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/Sum2" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Value 1 "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toStartOf="@+id/Sum1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Value 2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toStartOf="@+id/Sum2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        app:layout_constraintEnd_toStartOf="@+id/Sum3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Operation"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toStartOf="@+id/Op"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onClick"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/b4"
+        app:layout_constraintEnd_toStartOf="@+id/b7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/Sum3" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick1"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/b3"
+        app:layout_constraintEnd_toStartOf="@+id/b2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:onClick="onClick2"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/b5"
+        app:layout_constraintEnd_toStartOf="@+id/b4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:onClick="onClick3"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/b6"
+        app:layout_constraintEnd_toStartOf="@+id/b9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b3"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:onClick="onClick4"
+        android:text="%"
+        app:layout_constraintBottom_toTopOf="@+id/b16"
+        app:layout_constraintEnd_toStartOf="@+id/b6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b3" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onClick14"
+        android:text="sin"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b9"
+        app:layout_constraintEnd_toStartOf="@+id/b8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/Sum3" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:includeFontPadding="false"
+        android:onClick="onClick13"
+        android:text="cos"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:layout_constraintTop_toBottomOf="@+id/Sum3" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:onClick="onClick12"
+        android:text="tan"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:iconPadding="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/b11"
+        app:layout_constraintEnd_toStartOf="@+id/b10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b4"
+        app:layout_constraintTop_toBottomOf="@+id/b7" />
+
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="79dp"
+        android:layout_height="44dp"
+        android:onClick="onClick15"
+        android:text="Logn"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b9"
+        app:layout_constraintTop_toBottomOf="@+id/b8" />
+
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="79dp"
+        android:layout_height="44dp"
+        android:onClick="onClick5"
+        android:text="N^R"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b14"
+        app:layout_constraintEnd_toStartOf="@+id/b12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b6"
+        app:layout_constraintTop_toBottomOf="@+id/b9" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:onClick="onClick6"
+        android:text="n!"
+        app:layout_constraintBottom_toTopOf="@+id/b15"
+        app:layout_constraintEnd_toStartOf="@+id/b11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b5"
+        app:layout_constraintTop_toBottomOf="@+id/b4" />
+
+    <Button
+        android:id="@+id/b13"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:onClick="onClick10"
+        android:text="NPR"
+        app:layout_constraintBottom_toTopOf="@+id/b18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b14"
+        app:layout_constraintTop_toBottomOf="@+id/b12" />
+
+    <Button
+        android:id="@+id/b12"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:onClick="onClick11"
+        android:text="NCR"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b11"
+        app:layout_constraintTop_toBottomOf="@+id/b10" />
+
+    <Button
+        android:id="@+id/b18"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:onClick="onClick16"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b17"
+        app:layout_constraintTop_toBottomOf="@+id/b14" />
+
+    <Button
+        android:id="@+id/b17"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:onClick="onClick18"
+        android:text="ACCM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b15" />
+
+    <Button
+        android:id="@+id/b15"
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:onClick="onClick7"
+        android:text="Sum N2"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b17"
+        app:layout_constraintEnd_toStartOf="@+id/b14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b16"
+        app:layout_constraintTop_toBottomOf="@+id/b6" />
+
+    <Button
+        android:id="@+id/b14"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:onClick="onClick8"
+        android:text="Sum N3"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b18"
+        app:layout_constraintEnd_toStartOf="@+id/b13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b15"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b16"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:onClick="onClick9"
+        android:text="Sum N"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b17"
+        app:layout_constraintEnd_toStartOf="@+id/b15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b5" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b14,b2,b9,b12,b13,b10,b8,b16,b1,b6,b4,b5,b7,b11,b3,b15" />
+
+    <TextView
+        android:id="@+id/Op"
+        android:layout_width="201dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Sum2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/Sum1" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="530dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="Unary Input,Base Log a^x"
+        android:textAlignment="center"
+        android:textColor="#040303"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

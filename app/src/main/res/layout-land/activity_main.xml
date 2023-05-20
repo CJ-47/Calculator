@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Sum2"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Sum3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Op"
+        app:layout_constraintTop_toTopOf="@+id/Op" />
+
+    <EditText
+        android:id="@+id/Sum1"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Input"
+        android:inputType="numberDecimal"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColorHint="#090909"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/Op"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <TextView
+        android:id="@+id/Sum3"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Sum2"
+        app:layout_constraintTop_toTopOf="@+id/Sum2" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Value 1 "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Sum1"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Value 2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName5" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Operation"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:onClick="onClick14"
+        android:text="sin"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/b8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b5"
+        app:layout_constraintTop_toTopOf="@+id/b5" />
+
+    <Button
+        android:id="@+id/b12"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick11"
+        android:text="NCR"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b15"
+        app:layout_constraintEnd_toStartOf="@+id/b10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b13"
+        app:layout_constraintTop_toTopOf="@+id/b13" />
+
+    <Button
+        android:id="@+id/b18"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:onClick="onClick16"
+        android:text="RESET"
+        app:layout_constraintEnd_toStartOf="@+id/b16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b17"
+        app:layout_constraintTop_toTopOf="@+id/b16" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:onClick="onClick12"
+        android:text="tan"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:iconPadding="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/b6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b8"
+        app:layout_constraintTop_toTopOf="@+id/b8" />
+
+    <Button
+        android:id="@+id/b16"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:onClick="onClick9"
+        android:text="Sum N"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/b15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b18"
+        app:layout_constraintTop_toTopOf="@+id/b15" />
+
+    <Button
+        android:id="@+id/b17"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:onClick="onClick18"
+        android:text="ACCM"
+        app:layout_constraintEnd_toStartOf="@+id/b18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b18" />
+
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick15"
+        android:text="Logn"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b12"
+        app:layout_constraintTop_toTopOf="@+id/b12" />
+
+    <Button
+        android:id="@+id/b13"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick10"
+        android:text="NPR"
+        app:layout_constraintBottom_toTopOf="@+id/b15"
+        app:layout_constraintEnd_toStartOf="@+id/b12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b11"
+        app:layout_constraintTop_toTopOf="@+id/b11" />
+
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="90dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="26dp"
+        android:onClick="onClick5"
+        android:text="N^R"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/b16"
+        app:layout_constraintEnd_toStartOf="@+id/b13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b4"
+        app:layout_constraintTop_toTopOf="@+id/b4" />
+
+    <Button
+        android:id="@+id/b15"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:onClick="onClick7"
+        android:text="Sum N2"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/b14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b16"
+        app:layout_constraintTop_toTopOf="@+id/b14" />
+
+    <Button
+        android:id="@+id/b14"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClick8"
+        android:text="Sum N3"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b15"
+        app:layout_constraintTop_toTopOf="@id/b16" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:onClick="onClick4"
+        android:text="%"
+        app:layout_constraintEnd_toStartOf="@+id/b7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b2"
+        app:layout_constraintTop_toTopOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClick1"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/b3"
+        app:layout_constraintEnd_toStartOf="@+id/b2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:onClick="onClick"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/b5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:layout_constraintTop_toTopOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:onClick="onClick6"
+        android:text="n!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b9"
+        app:layout_constraintTop_toTopOf="@+id/b9" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick3"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/b18"
+        app:layout_constraintEnd_toStartOf="@id/b5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/b5"
+        app:layout_constraintTop_toTopOf="@+id/b3" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="115dp"
+        android:onClick="onClick2"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/b17"
+        app:layout_constraintEnd_toStartOf="@+id/b4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:includeFontPadding="false"
+        android:onClick="onClick13"
+        android:text="cos"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/b9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:layout_constraintTop_toTopOf="@+id/b7" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b14,b2,b9,b12,b13,b10,b8,b16,b1,b6,b4,b5,b7,b11,b3,b15" />
+
+    <TextView
+        android:id="@+id/Op"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Sum2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Sum1"
+        app:layout_constraintTop_toTopOf="@+id/Sum1" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="160dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="Unary Input,Base :Log,a^x"
+        android:textAlignment="center"
+        android:textColor="#040303"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        app:layout_constraintEnd_toEndOf="@id/Sum1"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sum1" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName2,Sum2,editTextTextPersonName4,editTextTextPersonName3,Sum3,Op,editTextTextPersonName5,editTextTextPersonName,Sum1" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b12,b4,b7,b18,b14,b9,b16,b13,b2,b15,b6,b8,b1,b17,b10,b3,b5,b11" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName2,editTextTextPersonName4,editTextTextPersonName3,Sum3,Op,Sum2,editTextTextPersonName5,editTextTextPersonName,Sum1" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum1,Sum3,Op" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum1,Sum3,Op" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum1,Sum3,Op" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="344dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName5,Sum2,editTextTextPersonName4,Sum1,Sum3,editTextTextPersonName3,editTextTextPersonName2,Op,editTextTextPersonName" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName5,editTextTextPersonName4,editTextTextPersonName3,editTextTextPersonName2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum1,Sum3,Op" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName5,editTextTextPersonName4,editTextTextPersonName3,editTextTextPersonName2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum1,Sum3,Op"
+        tools:layout_editor_absoluteX="798dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b2,b6,b1,b17,b4,b3,b18,b5" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b12,b16,b7,b13,b10,b11,b15,b14,b8,b9" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b12,b6,b13,b10,b11,b3,b5" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName5,editTextTextPersonName4,editTextTextPersonName3,editTextTextPersonName2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum1,Sum3,Op" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b2,b1,b4,b3,b5"
+        tools:layout_editor_absoluteX="716dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="editTextTextPersonName4,editTextTextPersonName2,editTextTextPersonName3,editTextTextPersonName5" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="Sum2,Sum3,Sum1,Op" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b5,b1,b2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b13,b8,b9,b10,b7,b6,b11,b12" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="b13,b8,b9,b10,b7,b6,b11,b12"
+        tools:layout_editor_absoluteX="321dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b5,b1,b2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b3,b4" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b8,b9,b7,b6" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="b3,b4"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="b17"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="b16,b17,b14,b15,b18" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="b5,b1"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="editTextTextPersonName"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="b9,b8,b5,b1,b6,b7,b2"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="editTextTextPersonName4,editTextTextPersonName2,editTextTextPersonName3,editTextTextPersonName5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="Sum2,Sum3,Op,Sum1" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="Sum2,Sum3,Op,Sum1" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="b9,b8,b5,b1,b6,b7,b2" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="b10,b13,b3,b4,b11,b12" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="b10,b13,b3,b4,b11,b12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
